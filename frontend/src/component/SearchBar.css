@@ -1,0 +1,152 @@
+/* SearchBar.css */
+
+.select-style {
+    padding: 12px 16px; /* 例: py-3 px-4 */
+    display: block;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #e2e8f0; /* 例: border-gray-200 */
+    border-radius: 0.5rem; /* 例: rounded-lg */
+    font-size: 0.875rem; /* 例: text-sm */
+}
+
+.select-style:focus {
+    border-color: #4299e1; /* フォーカス時の境界線の色: 例: border-blue-500 */
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* フォーカス時の影: 例: ring-blue-500 */
+}
+
+
+/* トグルボタンのスタイル */
+.toggle-button {
+    position: relative;
+    padding: 12px 16px; /* py-3 px-4 */
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #e2e8f0; /* border-gray-200 */
+    border-radius: 0.5rem; /* rounded-lg */
+    text-align: start;
+    font-size: 0.875rem; /* text-sm */
+    /* focus:border-blue-500 focus:ring-blue-500 は CSSでは直接表現できません */
+}
+
+/* ドロップダウンメニューのスタイル */
+.dropdown-menu {
+    margin-top: 0.5rem; /* mt-2 */
+    z-index: 50; /* z-50 */
+    width: 100%;
+    max-height: 300px; /* max-h-[300px] */
+    padding: 0.25rem; /* p-1 */
+    background-color: white;
+    border: 1px solid #e2e8f0; /* border-gray-200 */
+    border-radius: 0.5rem; /* rounded-lg */
+    overflow: hidden auto;
+}
+
+/* オプションのスタイル */
+.option {
+    padding: 8px 16px; /* py-2 px-4 */
+    width: 100%;
+    font-size: 0.875rem; /* text-sm */
+    color: #4a5568; /* text-gray-800 */
+    cursor: pointer;
+    border-radius: 0.5rem; /* rounded-lg */
+    /* hover:bg-gray-100 focus:outline-none focus:bg-gray-100 は CSSでは直接表現できません */
+}
+
+/* ボタンのスタイル */
+.button-style {
+    padding: 12px 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background-color: #2563eb !important; /* 青色 */
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+.button-style:hover {
+    background-color: #3b82f6; /* ホバー時に少し薄い青色 */
+}
+
+/* モーダルオーバーレイのスタイル */
+.modal-overlay {
+    display: none; /* 初期状態は非表示 */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 60;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* 背景色 */
+}
+
+/* モーダルコンテンツのスタイル */
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* モーダルヘッダーのスタイル */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* モーダルタイトルのスタイル */
+.modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 閉じるボタンのスタイル */
+.close-button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* モーダルフッターのスタイル */
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+/* 閉じるボタンスタイル（フッター内） */
+.close-button-style, .save-button-style {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.close-button-style {
+    background-color: #ccc;
+}
+.close-button-style:hover {
+    background-color: #bbb;
+}
+.save-button-style {
+    background-color: #4caf50; /* 緑色 */
+    color: white;
+}
+.save-button-style:hover {
+    background-color: #45a049; /* 濃い緑色 */
+}
+

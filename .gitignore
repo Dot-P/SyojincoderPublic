@@ -1,0 +1,13 @@
+# Backend
+backend/db
+
+# Frontend
+frontend/node_modules
+frontend/build
+
+# webscraping
+webscraping/not_used
+webscraping/*.csv
+
+# Enviroment
+*.env
