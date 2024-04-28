@@ -1,4 +1,4 @@
-module Syojincoder2
+module github.com/dot_p/syojin
 
 go 1.21.3
 
