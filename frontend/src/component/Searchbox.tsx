@@ -18,7 +18,7 @@ const SearchBox: React.FC<{ setUserName: (userName: string) => void }> = ({ setU
 
     const handleSubmit = async () => {
         try {
-            const response = await fetch("https://syojincoder-3d33c5ad4332.herokuapp.com/user_name", {
+            const response = await fetch("https://syojincoder-3d33c5ad4332.herokuapp.com/dashboard", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ userName: localUserName })

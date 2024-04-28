@@ -7,6 +7,7 @@ import (
 	"os"
 
 	"github.com/dot_p/syojin/api"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 var (
@@ -20,6 +21,7 @@ func main() {
 	db, err := sql.Open("mysql", dbConn)
 	if err != nil {
 		log.Println("Fail to connect DB")
+		fmt.Println(err)
 		return
 	}
 
